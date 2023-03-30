@@ -1,0 +1,99 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    background: #ccc;
+    flex-direction: column;
+    position: relative;
+    transition: 3s;
+}
+
+.speaker-icon {
+    float: left;
+    position: absolute;
+    top: 30px;
+    cursor: pointer;
+    left: 100px;
+}
+
+.mode-icon {
+    float: right;
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    cursor: pointer;
+}
+
+i {
+    font-size: 2em;
+}
+
+h1 {
+    margin-bottom: 50px;
+    font-size: 3em;
+}
+
+.wrapper {
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 32px, rgba(0, 0, 0, 0.22) 0px 4px 12px;
+}
+
+#counter-lable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5em;
+    margin: 10px 0 0;
+    overflow: hidden;
+    position: relative;
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        top: 0px;
+    }
+    25% {
+        top: 10px;
+    }
+    50% {
+        top: 20px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+hr {
+    width: 150px;
+    margin: 0 auto 50px;
+}
+
+
+button {
+    padding: 15px;
+    font-size: 2em;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: #fff 0px 3px 10px;
+    background-color: rgb(137, 169, 158);
+    cursor: pointer;
+    border: none;
+    color: #000;
+}
